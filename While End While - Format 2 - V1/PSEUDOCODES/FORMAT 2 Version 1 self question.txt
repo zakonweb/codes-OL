@@ -1,0 +1,3 @@
+Values are being input from a sensor in a car. The sensor, namely Proximity, reads the distance from the car in your front and output the "WARNING" when distance from the car in front is less than 10 meters.
+
+Write an algorithm that input sensor reading for INFINITE and warn if the maintained distance falls below 10 meters.
