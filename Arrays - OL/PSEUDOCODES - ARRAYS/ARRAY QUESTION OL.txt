@@ -1,0 +1,3 @@
+ARRAY QUESTION:
+
+A CLASS HAS 50 STUDENTS. Every student appears for the English language test. Input English marks for every student. Split your inputs in half (25each) and compare the totals of each half and output which half has more total marks than other half.

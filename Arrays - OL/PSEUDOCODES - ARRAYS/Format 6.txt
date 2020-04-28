@@ -1,0 +1,68 @@
+Format 6 [The Array Format]
+
+--------Declaration & Initialisation---------------
+DECLARE arrayName[1:n] : Type
+//Declare as many arrays required
+
+initialise variables
+
+For Count = 1 to n  //initialise array(s)
+  arrayName[Count]=  //0 or Null/"" as required
+  .....
+  .....
+Next
+-----------------------------------------------
+For Count = 1 to n
+  Output PROMPT
+
+  REPEAT
+    Input arrayName[Count]
+
+    //Validation, Only number types are validated
+    If arrayName[Count] < ... OR arrayName[Count] > .... Then
+      Output "Wrong Entry"
+      arrayName[Count] = 0
+    Endif
+  Until arrayName[Count] >... AND arrayName[Count] <...
+
+Next
+------------------------------------------------
+For Count = 1 to n
+  Output arrayName[Count] ,....
+Next
+-----------------------------------------
+For Count = 1 to n
+  new var. Input
+  Formula processing: arrayName[Count]=.....
+  Output arrayName[Count] ,....
+
+  total = total + arrayName[Count]
+  Counting with decision  (c1)
+  Extreme Values with extra var. storage
+Next
+----------------------------------------
+For Count = 1 to n
+  output with decision //If arrayName[Count] .... THEN....ENDIF
+Next
+
+Avg=total/n
+Per=(c1/n)*100
+Output Genralised Values
+
+----------------------------------------------------------
+
+//Searching an array
+Input Value
+For Count = 1 to n
+  If arrayName[Count] = Value Then
+     Output....
+     Exit
+  Endif
+Next
+Output "Not Found"
+
+
+
+
+
+

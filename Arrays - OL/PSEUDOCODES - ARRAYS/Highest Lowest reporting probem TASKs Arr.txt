@@ -1,0 +1,12 @@
+High=-1000, X=0
+For X = 1 to 30
+   If StdWeight[X] > High Then
+      High = StdWeight[X]
+      Name = StdName[X]
+   Endif
+Next
+
+Print High, Name
+-----------------------------
+
+In case if there are more than one students that have same highest weight then only the first one will be reported not rest of them.

@@ -1,0 +1,21 @@
+//Initialise an array
+For Count = 1 to 50
+    Num[Count] = 0
+Next
+
+//Input/Populate an array into an array
+Method 1.
+For i = 1 to 50
+    INPUT Name[i]
+Next
+
+Method 2.
+For Count = 1 to 20
+    INPUT Number
+    ABC[Count] = Number
+Next
+
+//OUTPUT/PRINT from an array
+For i = 1 to 40
+    OUTPUT myArr[i]
+Next 

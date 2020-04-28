@@ -1,0 +1,15 @@
+searching a name in array and reporting
+the name and weight difference of that 
+student:
+
+Found=False
+Print "Enter students name to search for"
+Read Name
+
+For X=1 to 30
+   If StdName[X] = Name Then
+     Print StdWeight[x], WeightDiff[x]
+     Found=True
+   Endif
+Next
+If Found=False Then Print "Value not found"  

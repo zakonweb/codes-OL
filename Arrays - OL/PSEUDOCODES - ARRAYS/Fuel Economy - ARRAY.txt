@@ -1,0 +1,20 @@
+DECLARE Dis : ARRAY [1:1000] OF INTEGER
+DECLARE Fuel: ARRAY [1:1000] OF REAL
+
+Count=0, FE=0,
+Largest=-1000, Lowest=1000
+Total=0, Avg=0
+
+For Count = 1 to 1000
+  Input Dis[Count], Fuel[Count]
+
+  FE = Dis[Count]/Fuel[Count]
+  OUTPUT FE
+
+  Total = Total+FE
+
+  IF FE>Largest THEN Largest=FE
+  IF FE<Lowest THEN Lowest=FE
+End For
+Avg = Total/1000
+OUTPUT Avg, Largest, Lowest

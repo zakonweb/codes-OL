@@ -1,0 +1,71 @@
+//All 5 arrays are declared here
+DECLARE Names : ARRAYS [1:30] OF String
+DECLARE Test1 : ARRAYS [1:30] OF INTEGER
+DECLARE Test2 : ARRAYS [1:30] OF INTEGER
+DECLARE Test3 : ARRAYS [1:30] OF INTEGER
+DECLARE Marks : ARRAYS [1:30] OF INTEGER
+
+//All 5 arrays are initialised here
+For x = 1 to 30
+  Names[x] = ""
+  Test1[x] = 0
+  Test2[x] = 0
+  Test3[x] = 0
+  Marks[x] = 0
+Next
+
+//All 5 Arrays are populated here
+For x = 1 to 30
+  INPUT "Enter name of student: ", N
+  INPUT T1
+  WHILE (T1<0 OR T1>20)
+    OUTPUT "Wrong entry. Please re-enter"
+	INPUT T1
+  END WHILE
+  
+  INPUT T2
+  WHILE (T2<0 OR T2>25)
+    OUTPUT "Wrong entry. Please re-enter"
+	INPUT T2
+  END WHILE
+  
+  REPEAT
+    INPUT T3
+	IF T3<0 OR T3>35 THEN OUTPUT "Wrong entry. Please re-enter"
+  UNTIL (T3>=0 AND T3<=35)
+
+  Names[x] = N
+  Test1[x] = T1
+  Test2[x] = T2
+  Test3[x] = T3
+Next
+
+//Question 2
+For x = 1 to 30
+  Marks[x] = Test1[x] + Test2[x] + Test3[x]
+  Total = Total + Marks[x]
+  OUTPUT Names[X], Marks[x]
+Next
+Avg = Total/30
+OUTPUT Avg
+
+//Question 3
+Highest = -1000
+For x = 1 to 30
+  IF Marks[x] > Highest Then
+    Highest = Marks[x]
+	N = Names[x]
+  END IF
+Next
+OUTPUT "Highest Scorer's name is: ",N, "And their score is: ", Highest	
+
+
+
+
+
+
+
+
+
+
+
