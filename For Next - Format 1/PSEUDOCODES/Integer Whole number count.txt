@@ -1,0 +1,8 @@
+Count=0, Num=0, X=0, a=0
+For Count = 1 to 1000
+   Input Num
+   X = INT(Num)
+ 
+   If Num = X Then a = a + 1
+Next
+Output a

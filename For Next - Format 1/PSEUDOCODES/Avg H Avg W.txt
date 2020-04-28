@@ -1,0 +1,12 @@
+Count=0, H=0, W=0,
+TH=0,TW=0, AVGH=0,
+AVGW=0
+For Count = 1 to 1000
+  Input H,W
+
+  TH=TH+H
+  TW=TW+W
+Next
+AVGH=TH/1000
+AVGW=TW/1000
+OUTPUT AVGH, AVGW

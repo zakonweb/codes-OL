@@ -1,0 +1,16 @@
+Count=0, Pop=0, LA=0,
+PD=0, Avg=0, H=-1000,
+L=1000, Tot=0
+For Count = 1 to 500
+  Input Pop, LA
+
+  PD = Pop/LA
+  Output PD
+
+  Tot = Tot + Pop
+  
+  IF PD > H Then H=PD
+  IF PD < L Then L=PD
+Next
+Avg = Tot/500
+Output Avg, H, L

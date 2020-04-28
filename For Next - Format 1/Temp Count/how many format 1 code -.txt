@@ -1,0 +1,10 @@
+
+For count = 1 to 200
+  Input Temp
+  
+  IF Temp > 20 then A=A+1
+  IF Temp < 10 then B=B+1
+
+  IF Temp < L  then L=Temp
+Next
+Output A,B,L

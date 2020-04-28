@@ -1,0 +1,12 @@
+
+For Count = 1 to 100
+
+ INPUT a,b,c,d,e
+ 
+ x= a*3 + b*2 + c*3 + d*2
+ y= x MOD 10
+ 
+ IF y = e then z=z+1
+Next
+
+OUTPUT z
