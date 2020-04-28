@@ -1,0 +1,25 @@
+INPUT A,B,C,D
+X=0
+K=0
+WHILE X <> 1
+  X=1
+  IF A>B THEN
+    K=A
+    A=B
+    B=K
+    X=0
+  ELSEIF B>C THEN
+    K=B
+    B=C
+    C=K
+    X=0
+  ELSEIF C>D THEN
+    K=C
+    C=D
+    D=K
+    X=0
+  ENDIF
+END WHILE
+OUTPUT A,B,C,D
+
+DATASET 9,8,0,3
