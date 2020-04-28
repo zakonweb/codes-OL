@@ -1,0 +1,43 @@
+
+Count=0, ID=0, W=0, H=0, BMI=0
+For Count = 1 to 30
+   Input ID, W, H
+
+   BMI = W/(H*H)
+   Output ID, BMI
+
+   IF BMI > 25 Then Output "OVER WEIGHT"
+   IF BMI < 19 Then Output "UNDER WEIGHT"
+   IF BMI >= 19 AND BMI <= 25 Then Output "NORMAL"
+Next
+
+------------------
+
+Count=0, ID=0, W=0, H=0, BMI=0
+For COunt = 1 to 30
+   Input ID, W, H
+
+   BMI = W/(H*H)
+   Output ID, BMI
+
+   CASE OF BMI
+   is > 25: Output "OVER WEIGHT"
+   is < 19: Output "UNDER WEIGHT"
+   is 19 To 25: Output "NORMAL"
+   END CASE
+Next
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

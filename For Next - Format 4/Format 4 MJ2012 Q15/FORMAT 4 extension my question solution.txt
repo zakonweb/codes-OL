@@ -1,0 +1,20 @@
+Day=0, A=0, N2=0, Enq=0
+B=0, Per=0, IC=0, HP=0
+
+FOR Day = 1 to 7
+  A=0
+  Input N2
+  TotEnq=TotEnq+N2
+
+  For Enq = 1 to N2
+    INPUT HP
+
+    IF HP < 100000 Then A=A+1
+    IF HP > 500000 Then B=B+1
+
+  Next Enq
+  Ouput A
+Next Day
+
+Per = (B/TotEnq)*100
+OUTPUT Per

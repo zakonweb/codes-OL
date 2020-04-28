@@ -1,0 +1,16 @@
+H=0, M=0, COuntry=""
+Input Countray, H, M
+If Country = "Mexico" Then
+   H=H-7
+Endif
+
+If Country = "India" Then
+   H=H+4
+   M=M+30
+Endif
+
+If Country = "New Zealand" Then
+   H=H+11
+Endif
+
+Output Country, H,M

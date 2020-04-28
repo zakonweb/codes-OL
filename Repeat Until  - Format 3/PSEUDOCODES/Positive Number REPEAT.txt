@@ -1,0 +1,15 @@
+
+
+
+PN=0, Tot=0, 
+Count=0, AVG=0, Lar=-1000
+
+REPEAT
+  INPUT PN
+  Tot = Tot + PN
+  Count=Count+1
+  IF PN > Lar Then Lar = PN
+  
+UNTIL (PN = -1)
+AVG = Tot/Count
+OUTPUT AVG, Lar

@@ -1,0 +1,15 @@
+For Days = 1 to 365
+  TotD=0
+  For Reading = 1 to 10
+     Input Temp
+     TotD=TotD+Temp
+
+     If Temp > High Then High = Temp
+     If Temp < Low Then Low = Temp
+  Next Reading
+  AvgD=TotD/10
+  TotY=TotY+TotD
+  Output AvgD
+Next
+AvgY=TotY/(365*10)
+Output AvgY,High,Low

@@ -1,0 +1,37 @@
+Presence Check:
+
+REPEAT
+  Input Name
+  IF Name="" THEN OUTPUT "Name can't be null."
+UNTIL Name <> ""
+******
+Input Name
+WHILE Name = ""
+   OUTPUT "Name can't be null."
+   INPUT Name
+ENDWHILE
+--------------------------------------------------
+Range Check:
+
+REPEAT
+  INPUT Age
+  IF Age<10 OR Age>15 THEN OUTPUT "Wrong entry. Enter between 10..15"
+UNTIL Age >=10 AND Age <=15
+******
+Input Age
+WHILE Age<10 OR Age>15
+  OUTPUT "Wrong entry. Enter between 10..15"
+  Input Age
+ENDWHILE
+--------------------------------------------------
+LIMIT CHECK:
+REPEAT
+  INPUT Age
+  IF Age<10 THEN OUTPUT "Wrong entry. Enter above 10"
+UNTIL Age >=10
+******
+Input Age
+WHILE Age<10
+  OUTPUT "Wrong entry. Enter above 10"
+  Input Age
+ENDWHILE

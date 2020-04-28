@@ -1,0 +1,7 @@
+INPUT NumP, StartSt, EndSt
+If StartSt > EndSt Then NoSt = StartSt-EndSt
+If EndSt > StartSt Then NoSt = EndSt-StartSt
+
+Fare = (NoSt * 2) * NumP
+IF NumP >= 3 Then Fare = fare * 0.9
+Output fare

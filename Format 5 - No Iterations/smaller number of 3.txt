@@ -1,0 +1,6 @@
+Num1=0, Num2=0, Num3=0, x=0
+INPUT Num1, Num2, Num3
+IF Num1<Num2 AND Num1<Num3 THEN x=Num2*Num3
+IF Num2<Num1 AND Num2<Num3 THEN x=Num1*Num3
+IF Num3<Num2 AND Num3<Num1 THEN x=Num1*Num2
+OUTPUT x

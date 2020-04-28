@@ -1,0 +1,17 @@
+Count=0, Time=0, FS=0,
+Fastest=-1000, Slowest=1000
+Total=0, Avg=0
+
+For Count = 1 to 500
+  Input Time
+
+  FS = 200/Time
+  OUTPUT FS
+
+  Total = Total+FS
+
+  IF FS>fastest THEN fastest=FS
+  IF FS<Slowest THEN Slowest=FS
+End For
+Avg = Total/500
+OUTPUT Slowest, Fastest, Avg

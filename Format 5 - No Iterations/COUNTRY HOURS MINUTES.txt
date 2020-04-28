@@ -1,0 +1,8 @@
+INPUT CN, H, M
+IF CN="Mexico" THEN H=H-7
+IF CN="India" THEN 
+  H=H+4
+  M=M+30
+ENDIF
+IF CN="New Zealand" THEN H=H+11
+OUTPUT CN, H, M

@@ -1,0 +1,18 @@
+
+For Days = 1 to 365
+   For Readings = 1 to 10
+     Input Temp
+
+     Total1 = Total + temp
+     If Temp > H Then H = temp
+     If temp < L Then L = temp
+   Next Readings
+
+   AvgD = Total1/10
+   Total2 = Total2 + Total1
+   Total1 = 0
+
+   Output AvgD
+Next Days
+AvgY = Total2/(365*10)
+Output AvgY, H, L

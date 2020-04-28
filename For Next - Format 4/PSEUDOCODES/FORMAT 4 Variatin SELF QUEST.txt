@@ -1,0 +1,14 @@
+Class=0, A=0, N=0,
+Student=0, POS=0, B=0
+
+FOR Class = 1 to 25
+  A=0
+  INPUT N
+  FOR Student = 1 to N
+    INPUT POS
+    IF POS = 1 THEN A=A+1
+    IF POS = 2 THEN B=B+1
+  NEXT Student
+  OUTPUT A
+NEXT Class
+OUTPUT B

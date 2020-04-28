@@ -1,0 +1,23 @@
+FORMAT 3 (Post Condition)
+(SIMPLE CONDITION BASED LOOPS):
+
+Initialise
+
+
+REPEAT
+   INPUT ...
+   Formula Calculation
+   OUTPUT Formula Calculations Result
+
+   Totaling (Total = Total + ...)
+
+   Counting without decision (d1)
+   Counting with decision (c1)
+   OUTPUT with decision
+
+   Extreme Values
+
+UNTIL (Condition)
+Avg = Total/d1
+Per = (c1/d1)*100
+OUTPUT...

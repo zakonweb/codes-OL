@@ -1,0 +1,29 @@
+FORMAT 4, Version 2. (NESTED COUNT BASED(FOR...NEXT) LOOPS):
+Initialisation...
+For OuterCount = 1 TO n1
+
+  Initialise [Partial initialisation of innerLoop 
+              variables like Total, C1]
+
+  INPUT n2
+  n3 = n3 + n2
+  For InnerCount = 1 to n2
+    INPUT ...
+
+    Formula Calculation
+    OUTPUT Formula Calculations Result
+
+    Totaling (Total = Total + ...)
+    Counting with decision (c1)
+    OUTPUT with decision
+
+    Extreme Values
+  Next InnerCount
+  GTotal = GTotal + Total
+  Avg1=Total/n2
+  Per1=(c1/n2)*100
+  Output ...
+Next OuterCount
+Avg2 = GTotal/(n3)
+Per2 = [c1/(n3)]*100
+OUTPUT...
