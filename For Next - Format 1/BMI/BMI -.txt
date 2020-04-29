@@ -1,5 +1,5 @@
 Count=0, ID=0, W=0, H=0, BMI=0
-For COunt = 1 to 30
+For Count = 1 to 30
    Input ID, W, H
 
    BMI = W/(H*H)
@@ -13,7 +13,7 @@ Next
 ------------------
 
 Count=0, ID=0, W=0, H=0, BMI=0
-For COunt = 1 to 30
+For Count = 1 to 30
    Input ID, W, H
 
    BMI = W/(H*H)
