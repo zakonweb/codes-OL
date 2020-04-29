@@ -8,5 +8,5 @@ For Count = 1 to 100
  
  IF y = e then z=z+1
 Next
-
+ 
 OUTPUT z
