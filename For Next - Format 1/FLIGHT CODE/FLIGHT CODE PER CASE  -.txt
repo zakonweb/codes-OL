@@ -1,0 +1,14 @@
+
+For Count = 1 to 400
+   Input AC
+   Case AC of
+   'FA': A=A+1
+   'SJ': B=B+1
+   'KA': C=C+1
+   Otherwise: Output "Err."
+   EndCase
+Next
+PFA = A/4
+PSJ = B/4
+PKA = C/4
+OutPut PFA, PSJ, PKA

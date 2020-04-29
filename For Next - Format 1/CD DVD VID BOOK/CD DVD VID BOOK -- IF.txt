@@ -1,0 +1,17 @@
+With IF...ENDIF
+-----------------------------
+Count=0, X=0, Code=0, 
+CD=0, DVD=0, Vid=0, Book=0
+
+For Count = 1 to 5000
+Input Code
+
+X=Int(Code/10000)
+
+IF X = 1 Then CD=CD+1
+IF X = 2 Then DVD=DVD+1
+IF X = 3 Then Vid=Vid+1
+IF X = 4 Then Book=Book+1
+
+Next
+Output CD, DVD, Vid, Book
