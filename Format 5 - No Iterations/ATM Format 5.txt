@@ -1,5 +1,0 @@
-INPUT Amount
-IF Amount > CB Then Output "Refused", END
-IF Amount > DL Then Output "Refused", END
-IF CB < 100 Then CB=CB*0.98
-OUTPUT Amount

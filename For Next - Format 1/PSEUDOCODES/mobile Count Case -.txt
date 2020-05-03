@@ -1,0 +1,17 @@
+COunt=0, PN=0, X=0, Yp=0, N2=0
+K=0, S=0
+For COunt = 1 to 50000
+  Input PN
+
+  X= INT(PN/100000)
+
+  Case X of
+    444: YP=YP+1
+    555: N2=N2+1
+    666: K=K+1
+    777: S=S+1
+  Endcase
+
+Next
+Output YP, N2, K, S
+

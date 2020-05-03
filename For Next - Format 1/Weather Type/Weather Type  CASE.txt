@@ -1,0 +1,17 @@
+WT="", Count=0, Temp=0, c=0, r=0,
+s=0, f=0, Highest=-1000, Lowest=1000
+
+FOR Count = 1 to 365
+  INPUT WT, Temp
+
+  CASE OF WT
+  "CLOUDY":  c=c+1
+  "RAINING": r=r+1
+  "SUNNY":   s=s+1
+  "FOGGY":   f=f+1
+  END CASE
+
+  IF Temp > Highest THEN Highest=Temp
+  IF Temp < Lowest THEN Lowest=Temp
+NEXT Count
+OUTPUT c,r,s,f,Highest,Lowest

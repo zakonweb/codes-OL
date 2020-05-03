@@ -1,9 +1,0 @@
-Count=0, D1=0, D2=0, D3=0, D4=0
-A=0, Per=0
-For Count = 1 to 50
-  Input D1, D2, D3, D4
-
-  If D1=D4 AND D2=D3 Then A=A+1
-Next
-Per = (A/50)*100
-Output Per

@@ -1,5 +1,0 @@
-KEY="", SENSOR1=0, SENSOR2=0
-Repeat
-   Input KEY, SENSOR1, SENSOR2
-   If SENSOR1 > 45 OR SENSOR2 < 0.19 Then Output "Warning"
-Until KEY = <ESCAPE> 

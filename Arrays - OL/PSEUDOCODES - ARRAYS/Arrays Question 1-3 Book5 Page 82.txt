@@ -58,14 +58,3 @@ For x = 1 to 30
   END IF
 Next
 OUTPUT "Highest Scorer's name is: ",N, "And their score is: ", Highest	
-
-
-
-
-
-
-
-
-
-
-
