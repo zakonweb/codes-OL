@@ -24,4 +24,4 @@ For Count = 1 to 30
    is < 19: Output "UNDER WEIGHT"
    is >= 19, <= 25: Output "NORMAL"
    END CASE
-Next
+Next 
