@@ -1,0 +1,16 @@
+O/N 2010
+17(a)
+
+PN=0, Tot=0, 
+Count=0, AVG=0, Lar=-1000
+
+INPUT PN
+WHILE PN <> -1
+  Tot = Tot + PN
+  Count=Count+1
+  IF PN > Lar Then Lar = PN
+  
+  INPUT PN
+ENDWHILE
+AVG = Tot/Count
+OUTPUT AVG, Lar

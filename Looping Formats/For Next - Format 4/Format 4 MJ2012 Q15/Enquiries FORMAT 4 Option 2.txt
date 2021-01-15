@@ -1,0 +1,17 @@
+
+For day = 1 to 7
+
+  A=0
+  Input N
+  TN=TN+N
+  For Enq = 1 to N
+      Input HouseCost
+
+      IF HouseCost < 100000 Then A = A + 1
+      IF HouseCost > 500000 Then B = B + 1
+  NEXT Enq
+  Output A
+
+NEXT day
+Per = (B/TN)*100
+Outut Per

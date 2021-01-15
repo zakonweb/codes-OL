@@ -1,0 +1,13 @@
+Count=0, Temp=0, a=0, b=0
+Lowest=1000
+
+For Count = 1 to 200
+  INPUT Temp
+
+  IF Temp > 20 Then a=a+1
+  IF Temp < 10 Then b=b+1
+
+  IF Temp < Lowest Then Lowest=Temp
+NEXT COunt
+
+OUTUT a,b,Lowest

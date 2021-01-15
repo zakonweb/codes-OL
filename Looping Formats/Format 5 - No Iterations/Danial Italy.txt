@@ -1,0 +1,9 @@
+Country="", Hrs=0, Mins=0
+INPUT Country, Hrs, Mins
+IF Country = "Mexico" THEN Hrs=Hrs-7
+IF Country = "New Zealand" THEN Hrs=Hrs+11
+IF Country = "India" THEN
+   Hrs=Hrs+4
+   Mins=Mins+30
+END IF
+OUTPUT Country, Hrs, Mins

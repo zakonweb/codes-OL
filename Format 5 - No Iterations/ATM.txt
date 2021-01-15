@@ -1,6 +1,0 @@
-INPUT Amount
-If Amount > CB Then Output "Withdrawl refused"
-IF Amount > DL Then Output "Withdrawl refused"
-CB=CB-Amount
-IF CB < 100 then CB=CB*0.98
-Output Amount

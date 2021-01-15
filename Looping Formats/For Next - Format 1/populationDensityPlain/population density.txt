@@ -1,0 +1,15 @@
+Count=0, Pop=0, LA=0, PD=0,
+Lar=-1000, Small=1000, AVG=0
+For Count = 1 to 500
+   INPUT Pop, LA
+
+   PD = Pop/LA
+   OUTPUT PD
+
+   Tot = Tot + Pop
+
+   IF PD > Lar Then Lar=PD
+   IF PD < Small Then Small=PD
+End For
+AVG=Tot/500
+OUTPUT AVG, Lar, Small

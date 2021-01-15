@@ -1,5 +1,0 @@
-Input Amount
-If Amount > CB Then Output "CB is Insufficient"
-If Amount > DL Then Output "Limit is Insufficient"
-If CB < 100 Then CB = CB - (Amount*.02)
-Output Amount

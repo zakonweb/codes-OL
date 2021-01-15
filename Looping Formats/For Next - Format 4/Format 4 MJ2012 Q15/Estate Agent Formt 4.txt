@@ -1,0 +1,18 @@
+Days=0, enq_no=0, tot_enq=0, Enquiries=0
+house_price=0, A=0, B=0, Per=0
+
+For Days = 1 to 7
+  Input enq_no
+  tot_enq = tot_enq + enq_no
+
+  For Enquiries = 1 to enq_no
+     Input house_price
+
+     If house_price < 100000 Then A=A+1
+     If house_price > 500000 Then B=B+1
+  Next Enquiries
+  Output A
+  A=0
+Next
+Per = (B/tot_enq)*100
+Output Per

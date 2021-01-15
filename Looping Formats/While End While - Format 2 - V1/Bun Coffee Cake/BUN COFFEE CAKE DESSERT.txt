@@ -1,0 +1,41 @@
+HIGH=-1000
+
+INPUT ITEM
+WHILE ITEM <> "end"
+  IF ITEM = "bun" THEN B=B+0.5			
+  IF ITEM = "coffee" THEN CO=CO+1.2		
+  IF ITEM = "cake" THEN CA=CA+1.5		
+  IF ITEM = "sandwich" THEN S=S+2.1		
+  IF ITEM = "dessert" THEN D=D+4	
+
+  INPUT ITEM
+ENDWHILE
+
+IF  B > HIGH THEN 
+   HIGH = B
+   VAL = "bun"
+ENDIF
+
+IF CO > HIGH   THEN 
+   HIGH = CO
+   VAL = "coffee"
+ENDIF
+
+IF CA > HIGH THEN 
+   HIGH = CA
+   VAL = "cake"
+ENDIF
+
+IF S > HIGH THEN 
+   HIGH = S
+   VAL = "sandwich"
+ENDIF
+
+IF D > HIGH THEN 
+   HIGH = D
+   VAL = "dessert"
+ENDIF
+
+
+TOTAL = B+CO+CA+S+D
+OUTPUT TOTAL, VAL

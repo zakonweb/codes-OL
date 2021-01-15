@@ -1,9 +1,0 @@
-Repeat
-  Input Num
-  Total = Total + Num
-  If Num > Lar Then Lar = Num
-
-  Count = Count +1
-Until Num = -1
-Avg=Total/Count
-Output Lar, Avg

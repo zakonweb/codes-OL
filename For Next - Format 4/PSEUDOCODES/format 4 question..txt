@@ -1,7 +1,0 @@
-There are 3 unions in a neighbourhood, 12 residents are the member of each union. every member works few hours per day to serve the union. 
-You are required to:
-* Input number of hours worked by each member in all three unions.
-* output avg hours worked by the members in each union
-* output avg hours worked by the members in all of the unions
-* output the percentage of members worked for more than 10 hours in all of the unions.
-* output the least hours worked by any member across all unions.

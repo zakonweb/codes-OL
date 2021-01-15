@@ -1,0 +1,12 @@
+FUNCTIONS:
+SUM()
+INT()
+ROUND()
+LOG()
+MOD
+DIV
+
+----------------------------------------
+DIGITS EXTRACTION:
+Suppose we have a number 856369 and we would like to detach first two digits (i.e. 85) and store them in a separate variable.
+This is digit extraction.
