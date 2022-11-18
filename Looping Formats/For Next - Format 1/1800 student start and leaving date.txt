@@ -1,0 +1,12 @@
+DECLARE Count, StID, error, StDate, LeDate : INTEGER
+
+Count = 0, StID = 0, error = 0,
+StDate = 0, LeDate = 0
+
+FOR Count = 1 TO 1800
+   INPUT "Enter Student ID: ", StID
+   INPUT "Enter Start Date: ", StDate
+   INPUT "Enter Leaving Date: ", LeDate
+   IF StDate > LeDate THEN error = error + 1
+NEXT
+OUTPUT "The number of errors = ", error

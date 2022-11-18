@@ -1,15 +1,22 @@
-Count=0, Pop=0, LA=0, PD=0,
-Lar=-1000, Small=1000, AVG=0
+DECLARE Count, Pop, LandArea, Total : INTEGER
+DECLARE PopDen, Lar, Small, Avg : REAL
+
+Count=0, Pop=0, LandArea=0, PopDen=0,
+Lar=-1000, Small=1000, Avg=0, Total=0
+
 For Count = 1 to 500
-   INPUT Pop, LA
+   INPUT "Enter population: ", Pop
+   INPUT "Land area: ", LandArea
 
-   PD = Pop/LA
-   OUTPUT PD
+   PopDen = Pop/LandArea
+   OUTPUT "Population Density: ", PopDen
 
-   Tot = Tot + Pop
+   Total = Total + Pop
 
-   IF PD > Lar Then Lar=PD
-   IF PD < Small Then Small=PD
-End For
-AVG=Tot/500
-OUTPUT AVG, Lar, Small
+   IF PopDen > Lar Then Lar=PopDen
+   IF PopDen < Small Then Small=PopDen
+NEXT
+Avg=Total/500
+OUTPUT "Average population:", Avg
+OUTPUT "Largest density: ", Lar
+OUTPUT "Smallest density", Small

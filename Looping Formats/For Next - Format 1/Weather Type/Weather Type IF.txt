@@ -1,15 +1,25 @@
-WT="", Count=0, Temp=0, c=0, r=0,
+DECLARE WeatherType : STRING
+DECLARE Count, c, r, s, f : INTEGER
+DECLARE Temp, Highest, Lowest : REAL
+
+WeatherType="", Count=0, Temp=0, c=0, r=0,
 s=0, f=0, Highest=-1000, Lowest=1000
 
 FOR Count = 1 to 365
-  INPUT WT, Temp
+  INPUT "Enter weather type: ", WeatherType
+  INPUT "Temprture: ", Temp
 
-  IF WT = "CLOUDY" THEN c=c+1
-  IF WT = "RAINING" THEN r=r+1
-  IF WT = "SUNNY" THEN s=s+1
-  IF WT = "FOGGY" THEN f=f+1
+  IF WeatherType = "CLOUDY" THEN c=c+1
+  IF WeatherType = "RAINING" THEN r=r+1
+  IF WeatherType = "SUNNY" THEN s=s+1
+  IF WeatherType = "FOGGY" THEN f=f+1
 
   IF Temp > Highest THEN Highest=Temp
   IF Temp < Lowest THEN Lowest=Temp
 NEXT Count
-OUTPUT c,r,s,f,Highest,Lowest
+OUTPUT "Cloudy days: ", c
+OUTPUT "Raininy days: ", r
+OUTPUT "Sunny days: ", s
+OUTPUT "Foggy days: ",f
+OUTPUT "Highest temprature: ", Highest
+OUTPUT "Lowest temprature: ", Lowest

@@ -1,8 +1,9 @@
 ﻿Module Module1
 
     Sub Main()
-        Dim Count, Time As Integer
-        Dim FS, Highest, Lowest, Total, AVG As Single
+        Dim Count As Integer
+        Dim Time, FS, Highest, Lowest, Total, AVG As Single
+        Const Distance = 200
 
         Count = 0
         Time = 0
@@ -13,16 +14,16 @@
         Lowest = 1000
 
         For Count = 1 To 5
+            console.write("Enter time: ")
             Time = Console.ReadLine()  'Input Time
 
-            FS = 200 / Time
-            Console.WriteLine(FS)    'Output FS
+            FS = Distance / Time
+            Console.WriteLine("Final speed = " & FS)    'Output FS
 
             Total = Total + FS
 
             If FS > Highest Then Highest = FS
             If FS < Lowest Then Lowest = FS
-
         Next
         AVG = Total / 5
         Console.WriteLine("Lowest speed was :" & Lowest)    'Output Lowest

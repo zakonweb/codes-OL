@@ -1,0 +1,10 @@
+DECLARE Num, Total, Count : INTEGER
+DECLARE Avg : REAL
+
+FOR Count = 1 TO 100
+  INPUT "Enter a numb: ", Num
+  Total = Total + Num
+NEXT
+
+Avg = Total/100
+OUTPUT "Average = ", Avg

@@ -1,0 +1,9 @@
+DECLARE Count, Num, a : INTEGER
+
+Count = 0, Num = 0, a = 0
+
+FOR Count = 1 TO 50
+   INPUT "Enter Number: ", Num
+   IF Num > 100 THEN a = a + 1
+NEXT
+OUTPUT "Num > 100 = ", a
