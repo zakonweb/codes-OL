@@ -1,0 +1,15 @@
+Count=0, PN=0, X=0, Yp=0, N2=0
+K=0, S=0
+For Count = 1 to 50000
+  Input "Enter Phone number: ", PN
+
+  X ← INT(PN/100000)
+
+  IF X = 444 THEN YP=YP+1
+  IF X = 555 THEN N2=N2+1
+  IF X = 666 THEN K=K+1
+  IF X = 777 THEN S=S+1
+  IF X < 444 OR X > 777 THEN OUTPUT "Wrong Entry"
+Next
+Output YP, N2, K, S
+

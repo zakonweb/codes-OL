@@ -1,23 +1,23 @@
-day=0, Total=0, AvgD=0, reading=0,
-Temp=0, Highest=-1000, Lowest=1000,
-GTotal=0, AvgY=0
+DECLARE TotalD, TotalY, Highest, Lowest, AvgD, AvgY : REAL
+DECLARE day,reading : INTEGER
 
-For day = 1 to 365
-  Total=0, AvgD=0
-  
-  For reading = 1 to 10
+TotalD ← 0, Highest ← -1000, Lowest ← 1000, TotalY ← 0
+
+For day ← 1 to 365
+  TotalD ← 0
+  For reading ← 1 to 10
     INPUT Temp
    
-    Total = Total + Temp
+    TotalD ← TotalD + Temp
 
-    IF Temp > Highest THEN Highest = Temp
-    IF Temp < Lowest THEN Lowest = Temp
+    IF Temp > Highest THEN Highest ← Temp
+    IF Temp < Lowest THEN Lowest ← Temp
   NEXT reading
-
-  GTaotal = GTotal + Total
-
-  AvgD = Total/10
-  OUTPUT AvgD
+  AvgD ← TotalD/10
+  OUTPUT "Average = ", AvgD
+  TotalY ← TotalY + TotalD
 Next day
-AvgY = GTotal/3650
-OUTPUT Highest, Lowest, AvgY
+AvgY ← TotalY/3650
+OUTPUT "Highest temprature = ", Highest
+OUTPUT "Lowest temprature = ", Lowest
+OUTPUT "Average of the year = ", AvgY
