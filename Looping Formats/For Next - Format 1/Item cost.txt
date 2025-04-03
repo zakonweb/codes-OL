@@ -1,0 +1,21 @@
+DECLARE Count, ItemType : INTEGER
+DECLARE ItemCost, PartCost, Total : REAL
+
+Count ← 0, Total ← 0
+
+FOR Count ← 1 TO 1000
+   OUTPUT "Enter item type: "
+   INPUT Itemtype
+   OUTPUT "Enter part cost: "
+   INPUT PartCost
+
+   IF Itemtype = 1 THEN ItemCost ← PartCost * 1.5
+   IF Itemtype = 2 THEN ItemCost ← PartCost * 2.5
+   IF Itemtype = 1 THEN ItemCost ← PartCost * 5.0
+   OUTPUT "Item Cost = ", ItemCost
+
+   Total ← Total + ItemCost
+NEXT
+
+Avg ← Total/1000
+OUTPUT "Average Item Cost per day = ", Avg
